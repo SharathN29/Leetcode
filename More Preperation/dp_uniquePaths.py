@@ -1,0 +1,21 @@
+"""
+Unique Paths : https://leetcode.com/problems/unique-paths/
+Author : Sharath Nagendra
+
+Passes all leetcdode test cases as of Oct 10 2019
+Runtime: 16 ms, faster than 78.97% of Python online submissions for Unique Paths.
+Memory Usage: 11.7 MB, less than 65.52% of Python online submissions for Unique Paths.
+"""
+class Solution(object):
+    def uniquePaths(self, m, n):
+        if not m or not n:
+            return 0
+        dp = [[1 for _ in range(n)]for _ in range(m)]
+        for i in range(1,m):
+            for j in range(1,n):
+                dp[i][j] = dp[i-1][j]+dp[i][j-1]
+        return dp[-1][-1]
+
+paths = Solution()
+m,n = 7,3
+print(paths.uniquePaths(m,n))
