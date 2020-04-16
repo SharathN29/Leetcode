@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakeWorkspace" PROJECT_DIR="$USER_HOME$/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/IntelVSImplicitPath">
+    <contentRoot DIR="$PROJECT_DIR$" />
+  </component>
+  <component name="JavaScriptSettings">
+    <option name="languageLevel" value="ES6" />
+  </component>
+</project>
