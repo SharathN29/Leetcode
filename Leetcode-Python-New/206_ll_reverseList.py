@@ -15,5 +15,3 @@ class Solution:
             head = newNode
             
         return prev
-
-        
